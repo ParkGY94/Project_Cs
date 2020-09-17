@@ -1,0 +1,23 @@
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Analog Digit.exe.config
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Analog Digit.exe
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Analog Digit.pdb
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.csprojAssemblyReference.cache
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.Properties.Resources.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.csproj.GenerateResource.cache
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.csproj.CoreCompileInputs.cache
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.exe
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.pdb
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.MainForm.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Myledbulb.exe
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\NationalInstruments.Common.dll
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Myledbulb.pdb
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\Myledbulb.exe.config
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\bin\Debug\NationalInstruments.Common.xml
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog Digit.csproj.CopyComplete
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.LogForm.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.SettingForm.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.OptionForm.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.SelfForm.resources
+C:\Users\gy157\source\repos\Analog Digit\Analog Digit\obj\Debug\Analog_Digit.AutoForm.resources
