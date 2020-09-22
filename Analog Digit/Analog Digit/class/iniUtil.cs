@@ -32,7 +32,7 @@ namespace COMMONS
              String val,
              String filePath);
 
-        // INI 값을 읽어 온다. 
+        // INI 값 읽어오기
         public string GetIniValue(String Section, String Key)
         {
             StringBuilder temp = new StringBuilder(255);
@@ -44,7 +44,7 @@ namespace COMMONS
                 return "";
         }
         //
-        // INI 값을 셋팅
+        // INI 값 셋팅
         public void SetIniValue(String Section, String Key, string Value)
         {
             WritePrivateProfileString(Section, Key, Value, iniPath);

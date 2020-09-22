@@ -25,7 +25,7 @@ namespace Analog_Digit
             {
                 string filename = openFileDialog1.FileName;
                 filepath.Text = filename;
-                dataGridView1.DataSource = logfile.load(filename,true);
+                dataGridView1.DataSource = logfile.load(filename, true);
                 for(int i = 0; i < dataGridView1.Rows.Count-1; i++)
                 {
                     dataGridView1[0, i].Value = i + 1;

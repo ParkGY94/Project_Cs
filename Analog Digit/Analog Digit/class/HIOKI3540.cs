@@ -24,6 +24,7 @@ namespace Analog_Digit
             return autoOff;
         }
 
+        //리셋
         public string Reset()
         {
             string reset;

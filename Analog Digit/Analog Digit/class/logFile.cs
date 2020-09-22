@@ -7,6 +7,8 @@ using System.IO;
 using System.Data;
 using System.Data.OleDb;
 using System.Globalization;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
 
 namespace Analog_Digit
 {
@@ -52,38 +54,73 @@ namespace Analog_Digit
             }
         }
 
-        /*public List<string> load(string Filename)
+        /*private static void ReleaseExcelObject(object obj)
         {
-            List<string> list = new List<string>();
-
-            string value = "";
-
-            using (StreamReader rdr = new StreamReader(Filename))
+            try
             {
-                while (true)
+                if (obj != null)
                 {
-                    value = rdr.ReadLine();
-                    if (value != null)
-                        list.Add(value);
-                    else
-                        break;
+                    Marshal.ReleaseComObject(obj);
+                    obj = null;
                 }
             }
-            return list;
-        }*/
+            catch (Exception ex)
+            {
+                obj = null;
+                throw ex;
+            }
+            finally
+            {
+                GC.Collect();
+            }
+        }
 
-        /*public DataTable load(string path, bool isFirstRowHeader)
+        public void save(List<string> data, int a)
         {
-            string header = isFirstRowHeader ? "YES" : "NO";
-            string pathOnly = Path.GetDirectoryName(path);
-            string fileName = Path.GetFileName(path);
-            string sql = @"SELECT * FROM [" + fileName + "]";
-            using (OleDbConnection connection = new OleDbConnection(
-        @"Provider = Microsoft.ACE.OLEDB.12.0;Data Source=" + pathOnly + ";Mode = ReadWrite|Share Deny None; " +
-            "Extended Properties='Excel 12.0; HDR=YES; IMEX=1';" +
-            "Persist Security Info=False"))
-            using (OleDbCommand command = new OleDbCommand(sql, connection))
-            using (OleDbDataAdapter adapter = new OleDbDataAdapter(command))
+            Excel.Application excelApp = null;
+            Excel.Workbook wb = null;
+            Excel.Worksheet ws = null;
+
+            try
+            {
+                // Excel 첫번째 워크시트 가져오기                
+                excelApp = new Excel.Application();
+                wb = excelApp.Workbooks.Add();
+                ws = wb.Worksheets.get_Item(1) as Excel.Worksheet;
+
+                // 데이타 넣기
+                int r = 1;
+                foreach (var d in data)
+                {
+                    ws.Cells[a, r] = d;
+                    r++;
+                }
+
+                // 엑셀파일 저장
+                wb.SaveAs(@"C:\Users\gy157\Documents\test3.xls", Excel.XlFileFormat.xlWorkbookNormal);
+                wb.Close(true);
+                excelApp.Quit();
+            }
+            finally
+            {
+                // Clean up
+                ReleaseExcelObject(ws);
+                ReleaseExcelObject(wb);
+                ReleaseExcelObject(excelApp);
+            }
+        }
+
+        public DataTable load()
+        {
+            string szConn = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\gy157\Documents\test3.xls;Extended Properties='Excel 8.0;HDR=No'";
+
+            OleDbConnection conn = new OleDbConnection(szConn);
+            conn.Open();
+            
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM [Sheet1$]", conn);
+            OleDbDataAdapter adpt = new OleDbDataAdapter(cmd);
+
+            using (OleDbDataAdapter adapter = new OleDbDataAdapter(cmd))
             {
                 DataTable dataTable = new DataTable();
                 dataTable.Locale = CultureInfo.CurrentCulture;

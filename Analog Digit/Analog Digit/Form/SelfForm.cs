@@ -63,8 +63,8 @@ namespace Analog_Digit
             Button b = (Button)sender;
             digit.Segment(Convert.ToInt32(b.Tag),state);
             
-            digit.port1_Output(2, true, ref ErrorMsg);
             digit.port1_Output(2, false, ref ErrorMsg);
+            digit.port1_Output(2, true, ref ErrorMsg);
 
             checkBox1.Checked = state[0];
             checkBox2.Checked = state[1];
@@ -283,8 +283,17 @@ namespace Analog_Digit
             digit.port0_Output(6, false, ref ErrorMsg);
             digit.port0_Output(7, false, ref ErrorMsg);
 
-            digit.port1_Output(2, true, ref ErrorMsg);
             digit.port1_Output(2, false, ref ErrorMsg);
+            digit.port1_Output(2, true, ref ErrorMsg);
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
         }
 
         private void BTN_HiokiReset_Click(object sender, EventArgs e)
@@ -310,7 +319,6 @@ namespace Analog_Digit
                 //chart1.ChartAreas[0].AxisY.ScaleView.ZoomReset();
                 Iszoomin = false;
             }
-
         }
 
         private void BTN_Update_Click_1(object sender, EventArgs e)

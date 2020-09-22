@@ -112,10 +112,10 @@ namespace Analog_Digit
             digit.Connect_port0_read(ref ErrorMsg);
             digit.Connect_port1_write();
 
-            if (ErrorMsg != null)
+            /*if (ErrorMsg != null)
             {
                 DigitalTImer.Enabled = false;
-            }
+            }*/
             digit.port1_Output(0, true, ref ErrorMsg);
             digit.port1_Output(1, true, ref ErrorMsg);
             digit.port1_Output(2, true, ref ErrorMsg);

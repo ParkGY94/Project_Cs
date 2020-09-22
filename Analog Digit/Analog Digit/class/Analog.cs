@@ -16,14 +16,14 @@ namespace Analog_Digit
         AnalogSingleChannelWriter writer;
         AnalogMultiChannelReader reader;
 
-        //생성자
+        //생성자 
         public Analog()
         {
             Readtask = new NationalInstruments.DAQmx.Task();
             Writetask = new NationalInstruments.DAQmx.Task();
         }
 
-        //아날로그 연결
+        //아날로그 입력 연결
         public bool Connect(ref string ErrorMsg)
         {
             bool flag = false;
@@ -49,6 +49,7 @@ namespace Analog_Digit
             return flag;
         }
 
+        //아날로그 출력 연결
         public void Connect_Output(ref string ErrorMsg)
         {
             try
@@ -67,6 +68,7 @@ namespace Analog_Digit
             }
 
         }
+
         //아날로그 입력
         public double Read(ref string ErrorMsg)
         {
@@ -93,6 +95,7 @@ namespace Analog_Digit
                 return 0;
         }
 
+        //아날로그 출력
         public void Output(double data, ref string ErrorMsg)
         {
             try

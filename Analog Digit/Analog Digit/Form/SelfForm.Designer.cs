@@ -63,6 +63,7 @@
             this.BTN_Start = new System.Windows.Forms.Button();
             this.BTN_Off = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -103,11 +104,8 @@
             this.Switch5 = new Ledbulb.Myledbulb();
             this.Switch6 = new Ledbulb.Myledbulb();
             this.Switch7 = new Ledbulb.Myledbulb();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.BTN_Update = new System.Windows.Forms.Button();
             this.voltagevalue = new System.Windows.Forms.NumericUpDown();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.Error = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -118,7 +116,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.UD_Range)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.voltagevalue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,12 +178,13 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Navy;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(-1, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(618, 24);
+            this.label1.Size = new System.Drawing.Size(97, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Analog";
             // 
@@ -198,9 +196,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Location = new System.Drawing.Point(636, 176);
+            this.panel2.Location = new System.Drawing.Point(636, 172);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(431, 485);
+            this.panel2.Size = new System.Drawing.Size(431, 489);
             this.panel2.TabIndex = 2;
             // 
             // groupBox2
@@ -217,9 +215,9 @@
             this.groupBox2.Controls.Add(this.ReadMsg);
             this.groupBox2.Controls.Add(this.BTN_HiokiDis);
             this.groupBox2.Controls.Add(this.BTN_HiokiCon);
-            this.groupBox2.Location = new System.Drawing.Point(3, 0);
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(417, 482);
+            this.groupBox2.Size = new System.Drawing.Size(417, 479);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
@@ -355,12 +353,13 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.Navy;
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(637, 149);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(642, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(430, 24);
+            this.label3.Size = new System.Drawing.Size(145, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "HIOKI 3540";
             // 
@@ -382,6 +381,7 @@
             this.panel3.Controls.Add(this.BTN_Start);
             this.panel3.Controls.Add(this.BTN_Off);
             this.panel3.Controls.Add(this.button10);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button2);
@@ -392,7 +392,6 @@
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.groupBox3);
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(14, 518);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(583, 377);
@@ -418,7 +417,7 @@
             this.BTN_Switch.Name = "BTN_Switch";
             this.BTN_Switch.Size = new System.Drawing.Size(152, 47);
             this.BTN_Switch.TabIndex = 39;
-            this.BTN_Switch.Text = "Switch Setting";
+            this.BTN_Switch.Text = "Input";
             this.BTN_Switch.UseVisualStyleBackColor = true;
             this.BTN_Switch.Click += new System.EventHandler(this.BTN_Switch_Click);
             // 
@@ -473,6 +472,18 @@
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.buttonNum_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 32);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Digital";
             // 
             // button1
             // 
@@ -986,36 +997,11 @@
             this.Switch7.TextY = 0F;
             this.Switch7.UserText = null;
             // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Navy;
-            this.label5.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(583, 24);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Digital";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.SystemColors.Window;
-            this.panel10.Controls.Add(this.BTN_Update);
-            this.panel10.Controls.Add(this.voltagevalue);
-            this.panel10.Controls.Add(this.label23);
-            this.panel10.Controls.Add(this.label24);
-            this.panel10.Font = new System.Drawing.Font("맑은 고딕", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.panel10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panel10.Location = new System.Drawing.Point(636, 12);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(431, 112);
-            this.panel10.TabIndex = 18;
-            // 
             // BTN_Update
             // 
             this.BTN_Update.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_Update.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.BTN_Update.Location = new System.Drawing.Point(241, 38);
+            this.BTN_Update.Location = new System.Drawing.Point(883, 52);
             this.BTN_Update.Name = "BTN_Update";
             this.BTN_Update.Size = new System.Drawing.Size(159, 52);
             this.BTN_Update.TabIndex = 11;
@@ -1026,7 +1012,7 @@
             // voltagevalue
             // 
             this.voltagevalue.Font = new System.Drawing.Font("굴림", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.voltagevalue.Location = new System.Drawing.Point(38, 54);
+            this.voltagevalue.Location = new System.Drawing.Point(680, 68);
             this.voltagevalue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.voltagevalue.Maximum = new decimal(new int[] {
             10,
@@ -1043,22 +1029,15 @@
             this.voltagevalue.TabIndex = 10;
             this.voltagevalue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(3, 1);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(0, 38);
-            this.label23.TabIndex = 0;
-            // 
             // label24
             // 
-            this.label24.BackColor = System.Drawing.Color.Navy;
-            this.label24.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-            this.label24.ForeColor = System.Drawing.Color.Yellow;
-            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.SystemColors.Control;
+            this.label24.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.ForeColor = System.Drawing.Color.Blue;
+            this.label24.Location = new System.Drawing.Point(657, 12);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(431, 24);
+            this.label24.Size = new System.Drawing.Size(187, 32);
             this.label24.TabIndex = 2;
             this.label24.Text = "Analog Output";
             // 
@@ -1072,15 +1051,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 900);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.BTN_Update);
+            this.Controls.Add(this.voltagevalue);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "SelfForm";
             this.Text = "Manual Test";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1088,12 +1070,12 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UD_Range)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.voltagevalue)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1171,10 +1153,8 @@
         private System.Windows.Forms.Button BTN_Segment;
         private System.Windows.Forms.Button BTN_Switch;
         private System.Windows.Forms.Button BTN_HiokiReset;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button BTN_Update;
         private System.Windows.Forms.NumericUpDown voltagevalue;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Timer Error;
     }

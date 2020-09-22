@@ -40,6 +40,7 @@
             this.BTN_AutoForm = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dockingPannel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -50,10 +51,10 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(949, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(929, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -61,69 +62,70 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(13, 12);
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(3, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 67);
+            this.label1.Size = new System.Drawing.Size(481, 72);
             this.label1.TabIndex = 3;
-            this.label1.Text = "인턴 프로젝트";
+            this.label1.Text = "신입사원 프로젝트";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 23);
+            this.panel1.Location = new System.Drawing.Point(94, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1092, 101);
+            this.panel1.Size = new System.Drawing.Size(1082, 101);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.BTN_SettingForm);
             this.panel2.Controls.Add(this.BTN_SelfForm);
             this.panel2.Controls.Add(this.BTN_OptionForm);
+            this.panel2.Controls.Add(this.BTN_SettingForm);
             this.panel2.Controls.Add(this.BTN_LogForm);
             this.panel2.Controls.Add(this.BTN_AutoForm);
-            this.panel2.Location = new System.Drawing.Point(12, 130);
+            this.panel2.Location = new System.Drawing.Point(9, 145);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1092, 92);
+            this.panel2.Size = new System.Drawing.Size(79, 928);
             this.panel2.TabIndex = 5;
             // 
             // BTN_SettingForm
             // 
-            this.BTN_SettingForm.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_SettingForm.BackColor = System.Drawing.Color.SkyBlue;
             this.BTN_SettingForm.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_SettingForm.ForeColor = System.Drawing.Color.OrangeRed;
-            this.BTN_SettingForm.Location = new System.Drawing.Point(516, 12);
+            this.BTN_SettingForm.Location = new System.Drawing.Point(3, 473);
             this.BTN_SettingForm.Name = "BTN_SettingForm";
-            this.BTN_SettingForm.Size = new System.Drawing.Size(144, 67);
+            this.BTN_SettingForm.Size = new System.Drawing.Size(69, 140);
             this.BTN_SettingForm.TabIndex = 5;
-            this.BTN_SettingForm.Text = "SETTING";
+            this.BTN_SettingForm.Text = "SPEC";
             this.BTN_SettingForm.UseVisualStyleBackColor = false;
             this.BTN_SettingForm.Click += new System.EventHandler(this.BTN_SettingForm_Click);
             // 
             // BTN_SelfForm
             // 
-            this.BTN_SelfForm.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_SelfForm.BackColor = System.Drawing.Color.SkyBlue;
             this.BTN_SelfForm.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_SelfForm.ForeColor = System.Drawing.Color.OrangeRed;
-            this.BTN_SelfForm.Location = new System.Drawing.Point(173, 12);
+            this.BTN_SelfForm.Location = new System.Drawing.Point(3, 158);
             this.BTN_SelfForm.Name = "BTN_SelfForm";
-            this.BTN_SelfForm.Size = new System.Drawing.Size(143, 67);
+            this.BTN_SelfForm.Size = new System.Drawing.Size(69, 140);
             this.BTN_SelfForm.TabIndex = 4;
-            this.BTN_SelfForm.Text = "SELF";
+            this.BTN_SelfForm.Text = "Manual";
             this.BTN_SelfForm.UseVisualStyleBackColor = false;
             this.BTN_SelfForm.Click += new System.EventHandler(this.BTN_SelfForm_Click);
             // 
             // BTN_OptionForm
             // 
-            this.BTN_OptionForm.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_OptionForm.BackColor = System.Drawing.Color.SkyBlue;
             this.BTN_OptionForm.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_OptionForm.ForeColor = System.Drawing.Color.OrangeRed;
-            this.BTN_OptionForm.Location = new System.Drawing.Point(694, 12);
+            this.BTN_OptionForm.Location = new System.Drawing.Point(3, 629);
             this.BTN_OptionForm.Name = "BTN_OptionForm";
-            this.BTN_OptionForm.Size = new System.Drawing.Size(135, 67);
+            this.BTN_OptionForm.Size = new System.Drawing.Size(69, 140);
             this.BTN_OptionForm.TabIndex = 2;
             this.BTN_OptionForm.Text = "Option";
             this.BTN_OptionForm.UseVisualStyleBackColor = false;
@@ -131,12 +133,12 @@
             // 
             // BTN_LogForm
             // 
-            this.BTN_LogForm.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_LogForm.BackColor = System.Drawing.Color.SkyBlue;
             this.BTN_LogForm.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_LogForm.ForeColor = System.Drawing.Color.OrangeRed;
-            this.BTN_LogForm.Location = new System.Drawing.Point(342, 12);
+            this.BTN_LogForm.Location = new System.Drawing.Point(3, 315);
             this.BTN_LogForm.Name = "BTN_LogForm";
-            this.BTN_LogForm.Size = new System.Drawing.Size(143, 67);
+            this.BTN_LogForm.Size = new System.Drawing.Size(69, 140);
             this.BTN_LogForm.TabIndex = 1;
             this.BTN_LogForm.Text = "DATA";
             this.BTN_LogForm.UseVisualStyleBackColor = false;
@@ -144,12 +146,12 @@
             // 
             // BTN_AutoForm
             // 
-            this.BTN_AutoForm.BackColor = System.Drawing.SystemColors.Control;
+            this.BTN_AutoForm.BackColor = System.Drawing.Color.SkyBlue;
             this.BTN_AutoForm.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BTN_AutoForm.ForeColor = System.Drawing.Color.OrangeRed;
-            this.BTN_AutoForm.Location = new System.Drawing.Point(13, 12);
+            this.BTN_AutoForm.Location = new System.Drawing.Point(3, 3);
             this.BTN_AutoForm.Name = "BTN_AutoForm";
-            this.BTN_AutoForm.Size = new System.Drawing.Size(137, 67);
+            this.BTN_AutoForm.Size = new System.Drawing.Size(69, 140);
             this.BTN_AutoForm.TabIndex = 0;
             this.BTN_AutoForm.Text = "AUTO";
             this.BTN_AutoForm.UseVisualStyleBackColor = false;
@@ -157,8 +159,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Location = new System.Drawing.Point(12, 229);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(101, 121);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1075, 17);
@@ -166,10 +168,18 @@
             // 
             // dockingPannel
             // 
-            this.dockingPannel.Location = new System.Drawing.Point(12, 253);
+            this.dockingPannel.Location = new System.Drawing.Point(101, 145);
             this.dockingPannel.Name = "dockingPannel";
-            this.dockingPannel.Size = new System.Drawing.Size(1092, 928);
+            this.dockingPannel.Size = new System.Drawing.Size(1088, 928);
             this.dockingPannel.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(85, 149);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 765);
+            this.panel4.TabIndex = 8;
             // 
             // MainForm
             // 
@@ -177,7 +187,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1116, 1197);
+            this.ClientSize = new System.Drawing.Size(1207, 1091);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.dockingPannel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -205,6 +216,7 @@
         private System.Windows.Forms.Button BTN_SelfForm;
         private System.Windows.Forms.Button BTN_OptionForm;
         private System.Windows.Forms.Panel dockingPannel;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

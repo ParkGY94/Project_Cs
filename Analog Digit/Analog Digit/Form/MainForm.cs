@@ -31,10 +31,11 @@ namespace Analog_Digit
             {
                 MessageBox.Show("Connect", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 AutoFormOpen();
+                panel4.Height = 637;
             }
             else
             {
-                MessageBox.Show("Connecting Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("NI USB-6001을 연결해주세요.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -132,30 +133,35 @@ namespace Analog_Digit
         {
             CloseEveryForm();
             AutoFormOpen();
+            panel4.Height = 637;
         }
 
         private void BTN_SelfForm_Click(object sender, EventArgs e)
         {
             CloseEveryForm();
             SelfFormOpen();
+            panel4.Height = 717;
         }
 
         private void BTN_LogForm_Click(object sender, EventArgs e)
         {
             CloseEveryForm();
             LogFormOpen();
+            panel4.Height = 455;
         }
 
         private void BTN_SettingForm_Click(object sender, EventArgs e)
         {
             CloseEveryForm();
             SettingFormOpen();
+            panel4.Height = 467;
         }
 
         private void BTN_OptionForm_Click(object sender, EventArgs e)
         {
             CloseEveryForm();
             OptionFormOpen();
+            panel4.Height = 458;
         }
     }
 }
