@@ -1,0 +1,22 @@
+D:\BMS\Src\BMS\bin\Debug\BMS.exe.config
+D:\BMS\Src\BMS\bin\Debug\BMS.exe
+D:\BMS\Src\BMS\bin\Debug\BMS.pdb
+D:\BMS\Src\BMS\obj\Debug\BMS.Properties.Resources.resources
+D:\BMS\Src\BMS\obj\Debug\BMS.csproj.GenerateResource.cache
+D:\BMS\Src\BMS\obj\Debug\BMS.exe
+D:\BMS\Src\BMS\obj\Debug\BMS.pdb
+D:\BMS\Src\BMS\obj\Debug\BMS.Form1.resources
+D:\BMS\Src\BMS\obj\Debug\BMS.FormOption.resources
+D:\BMS\Src\BMS\obj\Debug\BMS.csprojResolveAssemblyReference.cache
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\bin\Debug\BMS.exe.config
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\bin\Debug\BMS.exe
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\bin\Debug\BMS.pdb
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.csprojAssemblyReference.cache
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.Form1.resources
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.FormOption.resources
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.Properties.Resources.resources
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.csproj.GenerateResource.cache
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.csproj.CoreCompileInputs.cache
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.exe
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.pdb
+C:\Users\gy157\OneDrive\바탕 화면\BMS\Src\BMS\obj\Debug\BMS.Form2.resources
